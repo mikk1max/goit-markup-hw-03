@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 p,
 h1,
 h2,
@@ -24,6 +28,18 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 .container {
@@ -142,6 +158,7 @@ h6 {
   display: block;
   margin: 0 auto;
   margin-top: 48px;
+  min-width: 169px;
 }
 
 .sec-baner-btn:hover,
@@ -237,7 +254,7 @@ h6 {
 }
 
 .label-container {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .teammate {
@@ -253,6 +270,10 @@ h6 {
   margin-bottom: 72px;
 }
 
+.portfolio-item-title {
+  margin-bottom: 8px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -260,11 +281,11 @@ h6 {
 }
 
 .portfolio-list-item {
-  border: 1px solid #e7e9fc;
   width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-label-container {
+  border: 1px solid #e7e9fc;
   padding: 32px 16px;
 }
 
@@ -295,7 +316,7 @@ h6 {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
